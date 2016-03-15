@@ -2,6 +2,7 @@ $dark: #424652;
 $light:#9a9da4;
 $highlight: #8bc6db;
 $border: #e7e7e7;
+$back:#fcfcfc;
 
 * {
   box-sizing: border-box;
@@ -61,6 +62,7 @@ p, li {
 #main-navigation {
   padding: 2.5em 5%;
   border-bottom: 0.5px solid $border;
+  background-color: $back;
   .name {
     font-weight: 700;
     font-size: .85em;
@@ -88,7 +90,7 @@ p, li {
 
 .row-1, .row-2, .row-3 {
   width: 70%;
-  margin: 7.5% auto;
+  margin: 9% auto;
   // display: inline-block;
   // text-align: left;
   // margin-bottom: 5%;
@@ -97,7 +99,7 @@ p, li {
 }
 
 .about {
-  padding: 0 2% 0 0;
+  // padding: 0 2% 0 0;
   text-transform: uppercase;
   text-align: center;
   letter-spacing: 4px;
@@ -197,7 +199,7 @@ p, li {
     text-transform: uppercase;
   }
   hr {
-    width: 3em;
+    width: 5%;
     display: block;
     height: 2px;
     border: 0;
@@ -228,6 +230,7 @@ p, li {
 #main-footer {
   padding: 2em 5% 5em 5%;
   border-top: 1px solid $border;
+  background-color: $back;
   .copyright {
     float: left;
     font-size: .9em;
@@ -330,7 +333,9 @@ p, li {
   //   padding: 5%;
   // }
   .row-1, .row-2, .row-3 {
-    width: 100%;
+    width: 80%;
+    margin-bottom: 6rem;
+    // margin: 10% 0; something strange happens
   }
   // .cell {
   //   // width: 45%;
