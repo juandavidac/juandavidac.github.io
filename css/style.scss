@@ -1,0 +1,357 @@
+$dark: #424652;
+$light:#9a9da4;
+$highlight: #8bc6db;
+$border: #e7e7e7;
+
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Raleway', sans-serif;
+}
+
+.icon {
+  font-size:1.5em;
+}
+.wrapper {
+  width: 95%;
+  margin:0 auto;
+  // border: 1px solid;
+  // text-align: center;
+  // padding: 1rem 0; no era necesario es mejor contrloar desde un sólo lugar, aquí o en rows, encontre que tiene ventaja de aquí para que no se distancien tanto las col
+}
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+h1, h2, h3, h4, h5, h6, p, ul, li {
+  color: $dark;
+}
+h1 {
+  font-size: 2.5rem;
+}
+h2 {
+  font-size: 2rem;
+}
+h3 {
+  font-size: 1.75rem;
+}
+h4 {
+  font-size: 1.375rem;
+}
+h5 {
+  font-size: 1.25rem;
+}
+h6 {
+  font-size: 1rem;
+}
+p, li {
+  font-size: 1.1rem;
+  line-height: 1.75 ;
+}
+// p, ul, ol {
+//   margin: 0 0 1.6em 0;
+// }
+#main-navigation {
+  padding: 2.5em 5%;
+  border-bottom: 0.5px solid $border;
+  .name {
+    font-weight: 700;
+    font-size: .85em;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    border-bottom: 3px double #E9E9E9;
+    padding: 1rem 1rem .7rem 1rem;
+    text-decoration: none;
+    color: $dark;
+    float: left;
+  }
+  nav {
+    float: right;
+    padding-top: 1.4rem;
+    a {
+      color: $dark;
+      text-decoration: none;
+      margin: 0 1rem;
+      font-size: 1rem;
+    }
+  }
+}
+
+.row-1, .row-2, .row-3 {
+  width: 70%;
+  margin: 10% auto;
+  // display: inline-block;
+  // text-align: left;
+  // margin-bottom: 5%;
+  // padding-right:  20%;
+  // border: 1px solid;
+}
+
+.about {
+  padding: 0 2% 0 0;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 4px;
+  // border: 1px solid;
+  // margin: 3% 0 10% 0;
+  .motto {
+    font-size: 1.5rem;
+    letter-spacing: 5px;
+  }
+  span {
+    font-size: 1.2rem;
+    text-transform: lowercase;
+  }
+  a {
+    color: $highlight;
+    font-weight: 700;
+    text-decoration: none;
+  }
+  i  {
+    display: block;
+  }
+}
+
+.projects {
+  // max-width: 820px;
+  text-align: center;
+  width: 70%;
+  margin: 0 auto;
+  // border: 1px solid;
+  width: -webkit-fit-content;
+  height: -webkit-fit-content;
+  width: -moz-fit-content;
+  height: -moz-fit-content;
+
+}
+  .cell {
+    width: 425px;
+    height: 150px;
+    margin: 0 1px 1px 0;
+    // display: inline-block;
+    display: inline-block;
+    border-radius: 18px;
+    // border: 1px solid #e7e7e7;
+    box-shadow: 0px 1px 40px 0 rgba(0, 0, 0, 0.3);
+    transition: all .3s ease-out;
+    &:hover {
+  	cursor: pointer;
+    box-shadow: 0px 2px 40px 0 rgba(0, 0, 0, 0.1);
+    }
+    .content-cell {
+      float:left;
+      width: 210px;
+      padding-left: 20px;
+      text-align: left;
+    }
+    img {
+      position: relative;
+      float: left;
+      width: 170px;
+      height: 130px;
+      // border: 1px solid;
+      margin: 0 5%;
+      // padding: 10px;
+      // -webkit-filter: grayscale(2);
+      // filter: grayscale(2);
+    }
+  }
+
+
+  .cell {
+    width: 200px;
+    height: 275px;
+    // float: none;
+    display: inline-block;
+    }
+    .content-cell {
+      float:none;
+      width: 90px;
+      padding-left: 0px;
+    }
+    img {
+      float: none;
+      display: inline-block;
+      width: 190px;
+      height: 150px;
+      padding: 10px 0;
+      // -webkit-filter: grayscale(2);
+      // filter: grayscale(2);
+    }
+
+.homepage-content {
+  h2 {
+    font-size: 1.1rem;
+    text-transform: uppercase;
+  }
+  hr {
+    width: 3em;
+    display: block;
+    height: 2px;
+    border: 0;
+    border-top: 1px solid $highlight;
+    margin: 2em 0;
+  }
+  h3 {
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: .5em;
+  }
+  a {
+    text-decoration: none;
+    color: $dark;
+    &:hover {
+      color: $dark;
+    }
+  }
+  .date {
+    font-size: .85em;
+    margin-bottom: 2em;
+    color: $highlight;
+  }
+  p {
+    margin: 0 0 .75em 0;
+  }
+}
+#main-footer {
+  padding: 2em 5% 5em 5%;
+  border-top: 1px solid $border;
+  .copyright {
+    float: left;
+    font-size: .9em;
+    margin: 0;
+  }
+  nav {
+    float: right;
+    i {
+      color: $dark;
+      margin: 0 1rem;
+      padding-top: .2em;
+      &:hover {
+        color: $highlight;
+      }
+    }
+  }
+}
+@media (max-width:1100px) {
+  .about {
+    .motto {
+      font-size: 1.3rem;  
+    }
+  }
+  // .row-1, .row-2, .row-3 {
+  //   display: inline;
+  //   // border: 1px solid;
+  // }
+  // .cell {
+  //   // width: 30%;
+  //   // border: 1px solid;
+  //   // display: block;
+  //   // display: inline-block;
+  //   width: 100%;
+  //   margin-left: 10%;
+  //   .content-cell {
+  //     float:left;
+  //     width: 50%;
+  //   }
+  // }
+.projects {
+  margin-left: 0%;
+}
+  #main-footer {
+    .copyright, nav {
+      float:none;
+      display: block;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+  }
+}
+
+@media (max-width:530px) {
+  #main-navigation {
+    padding: 2.5em 5%;
+    border-bottom: 1px solid $border;
+    .name {
+      font-weight: 700;
+      font-size: .85em;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      border-bottom: 3px double $border;
+      padding: 1rem 1rem .7rem 1rem;
+      text-decoration: none;
+      color: $dark;
+      float: none;
+      display:block;
+      margin: 0 auto;
+      text-align: center;
+      max-width: 154px;
+    }
+    nav {
+      float: none;
+      display:block;
+      padding-top: 1.4rem;
+      margin: 0 auto;
+      text-align: center;
+      a {
+        color: $dark;
+        text-decoration: none;
+        margin: 0 .2rem;
+        font-size: 1rem;
+      }
+    }
+  }
+  // .wrapper {
+  //   padding: 0;
+  // }
+  // .row-1, .row-2, .row-3 {
+  //   width: 100%;
+  // }
+  .about {
+    .motto {
+      font-size: 1.1rem;
+      letter-spacing: 3px;
+      font-weight: bold;
+    }
+    span {
+      font-size: 0.8rem;
+    }
+  }
+  // .projects {
+  //   margin-left: 0%;
+  // }
+  // .wrapper {
+  //   padding: 5%;
+  // }
+  .row-1, .row-2, .row-3 {
+    width: 100%;
+  }
+  // .cell {
+  //   // width: 45%;
+  //   // border: 1px solid;
+  //   float:none;
+  //   display: inline-block;
+  //   width: 200px;
+  //   height: 300px;
+  //   margin: 0;
+  //   // margin: 0 auto;
+  //   .content-cell {
+  //     display: inline-block;
+  //   }
+  //   img {
+  //     position: relative;
+  //     display: inline-block;
+  //     width: 190px;
+  //     height: 150px;
+  //   }
+  // }
+
+  }
