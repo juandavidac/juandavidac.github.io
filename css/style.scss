@@ -63,13 +63,12 @@ p, li {
 #main-navigation {
   padding: 2.5em 5%;
   border-bottom: 0.5px solid $border;
-  background-color: $back;
   .name {
     font-weight: 700;
     font-size: .85em;
     letter-spacing: 4px;
     text-transform: uppercase;
-    border-bottom: 3px double #E9E9E9;
+    border-bottom: 4px double #E9E9E9;
     padding: 1.4rem 2% 0.5rem 2%;
     text-decoration: none;
     color: $dark;
@@ -103,9 +102,14 @@ p, li {
 
 .row-1 {
   padding: 8%;
+  background-color: $back;
 }
 .row-2 {
   background-color: $back-resp;
+}
+.row-3 {
+  background-color: $back;
+  padding: 8%;
 }
 
 .about {
@@ -210,7 +214,7 @@ p, li {
     text-transform: uppercase;
   }
   hr {
-    width: 5%;
+    width: 2rem;
     display: block;
     height: 2px;
     border: 0;
@@ -240,9 +244,9 @@ p, li {
 }
 #main-footer {
   padding: 2em 5% 5em 5%;
-  margin-top: 7%;
+  // margin-top: 7%;
   border-top: 1px solid $border;
-  background-color: $back;
+  // background-color: $back;
   .copyright {
     float: left;
     font-size: .9em;
@@ -298,7 +302,6 @@ p, li {
 @media (max-width:530px) {
   #main-navigation {
     padding: 1.5em 0;
-    background-color: $back-resp;
     .name {
       font-size: .8em;
       letter-spacing: 3px;
@@ -323,9 +326,7 @@ p, li {
       }
     }
   }
-  #main-footer {
-    background-color: $back-resp;
-  }
+
   // .wrapper {
   //   padding: 0;
   // }
@@ -351,7 +352,7 @@ p, li {
   .row-1, .row-2, .row-3 {
     // width: 80%;  didnt need for the latest iteration
     // margin-bottom: 6rem;
-    margin: 3.5rem 0;
+    padding: 3.5rem 0;
     // margin: 10% 0; something strange happens
   }
   .cell {
