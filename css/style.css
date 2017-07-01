@@ -74,8 +74,7 @@ p, li {
   background-color: white; }
 
 .row-3 {
-  background-color: #fcfcfc;
-  padding: 8%; }
+  background-color: #fcfcfc; }
 
 .about {
   text-transform: uppercase;
@@ -102,6 +101,10 @@ p, li {
   height: -webkit-fit-content;
   width: -moz-fit-content;
   height: -moz-fit-content; }
+
+.post {
+  width: 700px;
+  margin: 0 auto 4em auto; }
 
 .cell {
   width: 200px;
@@ -148,6 +151,8 @@ p, li {
   color: #8bc6db; }
 .homepage-content p {
   margin: 0 0 .75em 0; }
+.homepage-content .post-preview {
+  font-size: .85em; }
 
 #main-footer {
   padding: 2em 5% 5em 5%;

@@ -14,13 +14,6 @@ body {
 .icon {
   font-size:1.5em;
 }
-// .wrapper {
-//   width: 95%;
-//   margin:0 auto;
-//   // border: 1px solid;
-//   // text-align: center;
-//   // padding: 1rem 0; no era necesario es mejor contrloar desde un sólo lugar, aquí o en rows, encontre que tiene ventaja de aquí para que no se distancien tanto las col
-// }
 
 .clearfix:before,
 .clearfix:after {
@@ -109,7 +102,7 @@ p, li {
 }
 .row-3 {
   background-color: $back;
-  padding: 8%;
+  // padding: 8%;
 }
 
 .about {
@@ -174,6 +167,10 @@ p, li {
 //     // filter: grayscale(2);
 //   }
 // }
+.post {
+  width: 700px;
+  margin: 0 auto 4em auto;
+}
 
 .cell {
   width: 200px;
@@ -240,6 +237,9 @@ p, li {
   }
   p {
     margin: 0 0 .75em 0;
+  }
+  .post-preview {
+    font-size: .85em;
   }
 }
 #main-footer {
